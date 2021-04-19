@@ -25,7 +25,7 @@ class OwnerCourseMixin(OwnerMixin,
     success_url = reverse_lazy('manage_course_list')
 
 
-class OwnerCourseEditMixin(OwnerMixin, OwnerEditMixin):
+class OwnerCourseEditMixin(OwnerCourseMixin, OwnerEditMixin):
     template_name = 'courses/manage/course/form.html'
 
 
